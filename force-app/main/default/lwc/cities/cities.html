@@ -1,0 +1,14 @@
+<!-- sldsValidatorIgnore -->
+<template >
+
+        <template iterator:city = {data}>
+            <div key={city.value.Id}>
+                
+                <button value={city.value.Id} onclick={handleClick}>
+                    {city.value.Name}
+                </button>
+            </div>
+        </template>
+
+        
+</template>

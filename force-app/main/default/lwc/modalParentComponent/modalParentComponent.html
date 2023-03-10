@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="Simple Event" icon-name="custom:custom14">
+        <div class="slds-var-m-around_medium">
+            <button class="slds-button slds-button_success" onclick={showHandler}>Secret Message!</button>
+            <template if:true={showModal}>
+                <c-modal-child-component
+                header-text="Message!!"
+                body-text="Hello, how are you buddy? "
+                onclose={modalCloseHandler}
+                ></c-modal-child-component>
+            </template>
+        </div>
+    </lightning-card>
+</template>
